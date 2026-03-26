@@ -22,7 +22,7 @@ next:
 
 ### 1. 找到安装文件
 
-从 QQ 群开学大礼包或 [此链接](/RedPanda-CPP-3.4.3279-With-gcc-15.2.0.zip) 获取**小熊猫 C++**的安装文件 `RedPanda-CPP-3.4.3279-With-gcc-15.2.0.zip`
+从 QQ 群开学大礼包或获取**小熊猫 C++**的安装文件 `RedPanda-CPP-3.4.3279-With-gcc-15.2.0.zip`
 
 - 本课程使用的是特别定制版本，不要另外从网上下载
   - **安装包名**: `RedPanda-CPP-3.4.3279-With-gcc-15.2.0.zip`
