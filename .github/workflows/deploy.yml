@@ -48,7 +48,7 @@ jobs:
           path: docs/.vitepress/dist
       # 上传构建产物作为通用artifact，供部署到自有服务器使用
       - name: Upload build artifact for server deployment
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: vitepress-build
           path: docs/.vitepress/dist
@@ -71,7 +71,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
   # 部署到校内服务器
   deploy-tongji-server:
@@ -89,11 +89,11 @@ jobs:
     name: Deploy to Tongji Server
     steps:
       - name: Download build artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: vitepress-build
       - name: Deploy to Server via SSH
-        uses: burnett01/rsync-deployments@7.1.0
+        uses: burnett01/rsync-deployments@v8
         with:
           remote_path: /home/httpd/hlp-website/Website/
           remote_host: ${{ secrets.SERVER_HOST}}
