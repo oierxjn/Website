@@ -241,7 +241,7 @@ const sliderPosition = ref(50)
 
     <!-- 压缩选项面板 -->
     <details class="mb-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
-      <summary class="px-6 py-4 cursor-pointer select-none font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-750 rounded-xl transition-colors">
+      <summary class="px-6 py-4 cursor-pointer select-none font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600 rounded-xl transition-colors">
         ⚙️ 压缩选项
       </summary>
       <div class="px-6 pb-5 pt-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
