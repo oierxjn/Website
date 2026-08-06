@@ -236,6 +236,25 @@ int main()
 
 如果在执行上述步骤过程中出现问题，或完成上述步骤后报错仍未解决，请联系助教寻求帮助。
 
+### 未能正确加载“IntelliCodeCppPackage”包
+
+![未能正确加载“IntelliCodeCppPackage”包](IntelliCodeCppPackage.png)
+
+> 未能正确加载“IntelliCodeCppPackage”包。
+>
+> 此问题可能是因配置更改或安装另一个扩展导致的。……
+
+该问题一般出现在 VS 更新之后，且重启 VS、通过 Visual Studio Installer 修复均无法解决。查看弹窗中提到的 `ActivityLog.xml`，可以找到关键报错：
+
+```
+CreateInstance failed for package [IntelliCodeCppPackage]
+System.ArgumentException: 路径中具有非法字符
+```
+
+其原因是 VS 的安装路径中含有中文（或其他特殊字符），更新后相关组件无法正常加载。
+
+**解决方案**：打开 Visual Studio Installer，卸载 VS 后重新安装，安装时在“安装位置”选项卡中选择**不含中文及特殊字符的路径**（建议直接使用默认路径）。
+
 ### Fn 与 FnLock 相关简介
 
 在笔记本电脑中，我们能看到一个 `Fn` 键和 `FnLock` 键，其目的是为用户对计算机的常用操作提供更高效便捷的方式。
