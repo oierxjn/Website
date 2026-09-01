@@ -127,6 +127,9 @@ export default defineConfig({
       {
         text: "常见问题",
         link: "/faq/",
+        items: [
+          { text: "Gitea 答疑平台", link: "/faq/gitea/" },
+        ],
       },
       {
         text: "参考图表",
