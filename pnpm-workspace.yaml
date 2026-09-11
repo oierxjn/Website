@@ -2,7 +2,5 @@ allowBuilds:
   '@parcel/watcher': true
   esbuild: true
   sharp: true
-
-peerDependencyRules:
-  allowedVersions:
-    "markdown-it-math@5.2.1>temml": "0.13.2"
+minimumReleaseAgeExclude:
+  - vitepress@2.0.0-alpha.20
